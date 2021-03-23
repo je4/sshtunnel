@@ -1,0 +1,10 @@
+logfile = "" # log file location
+loglevel = "DEBUG" # CRITICAL|ERROR|WARNING|NOTICE|INFO|DEBUG
+
+[tunnel.main]
+    user = "root"
+    privatekey = "C:/daten/keys/putty_ed25519.priv.openssh"
+    endpoint = "ba14ns21403.fhnw.ch:22"
+    [tunnel.main.forward.elasticsearch]
+        local = "localhost:9202"
+        remote = "asara269.adm.ds.fhnw.ch:9200"
