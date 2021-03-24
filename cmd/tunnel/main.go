@@ -96,5 +96,7 @@ func main() {
 		}
 		defer t.Close()
 	}
+
+	// do something interesting or just wait...
 	time.Sleep(2 * time.Second)
 }
