@@ -15,7 +15,7 @@ package main
 
 import (
 	"flag"
-	"github.com/je4/sshtunnel/pkg/sshtunnel"
+	"github.com/je4/sshtunnel/v2/pkg/sshtunnel"
 	"github.com/op/go-logging"
 	"os"
 	"time"
