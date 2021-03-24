@@ -5,6 +5,15 @@ package](https://godoc.org/golang.org/x/crypto/ssh) with a higher-level API for
 building SSH tunnels.
 
 ```go
+import (
+    "flag"
+    "github.com/je4/sshtunnel/pkg/sshtunnel"
+    "github.com/op/go-logging"
+    "os"
+    "time"
+)
+
+
 func main() {
 	log := logging.MustGetLogger("sshtunnel")
 	t, err := sshtunnel.NewSSHTunnel(
@@ -37,6 +46,10 @@ func main() {
 		return
 	}
 	defer t.Close()
+	
+	time.Sleep(2 * time.Second)
+	
+	// [...]
 }
 ```
 
